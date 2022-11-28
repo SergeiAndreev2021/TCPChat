@@ -43,8 +43,6 @@ public class Message implements Serializable {
                 '}';
     }
     public static Message getMessage(String sender, String text){
-        Message message = new Message(sender,text);
-        message.setDateTime();
-        return message;
+       return new Message(sender,text);
     }
 }
